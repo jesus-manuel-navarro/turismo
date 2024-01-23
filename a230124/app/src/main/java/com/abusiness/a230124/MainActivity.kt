@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val boton:Button=findViewById(R.id.button)
+        val boton2:Button=findViewById(R.id.button2)
         val dato1:EditText=findViewById(R.id.editTextText)
         val dato2:EditText=findViewById(R.id.editTextText2)
         val resultado:TextView=findViewById(R.id.textView)
@@ -20,11 +21,11 @@ class MainActivity : AppCompatActivity() {
             var suma:Int=dato11+dato22
             resultado.text=suma.toString()
         }
-        boton.setOnClickListener {
+        boton2.setOnClickListener {
             var dato11:Int=dato1.text.toString().toInt()
             var dato22:Int=dato2.text.toString().toInt()
-            var suma:Int=dato11+dato22
-            resultado.text=suma.toString()
+            var resta:Int=dato11-dato22
+            resultado.text=resta.toString()
         }
     }
 }
