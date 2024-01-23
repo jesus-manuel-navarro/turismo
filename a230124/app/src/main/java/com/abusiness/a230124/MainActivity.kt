@@ -20,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             var suma:Int=dato11+dato22
             resultado.text=suma.toString()
         }
+        boton.setOnClickListener {
+            var dato11:Int=dato1.text.toString().toInt()
+            var dato22:Int=dato2.text.toString().toInt()
+            var suma:Int=dato11+dato22
+            resultado.text=suma.toString()
+        }
     }
 }
